@@ -58,12 +58,12 @@ def main():
         for lsb in range(lsbmin,lsbmax-1,1):
             spi.write_pot(lsb)
             print("Wiper Position = ",spi.WiperGetPosition())
-            time.sleep(0.05)
+            time.sleep(0.1)
 
         for lsb in range(lsbmax,lsbmin+1,-1):
             spi.write_pot(lsb)
             print("Wiper Position = ",spi.WiperGetPosition())
-            time.sleep(0.05)
+            time.sleep(0.1)
 
 if __name__ == "__main__":
     spi = MCP41HVX1(0,0) # spi.open(0,0)
