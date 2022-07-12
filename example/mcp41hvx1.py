@@ -66,7 +66,7 @@ def main():
             time.sleep(0.05)
 
 if __name__ == "__main__":
-    spi = MCP41HVX1(0,0)
+    spi = MCP41HVX1(0,0) # spi.open(0,0)
     main()
     
 

@@ -4,7 +4,7 @@
 ## Features Highlights:
 
 - Single-Resistor Network
-
+- SPI Serial Interface (10 MHz, Modes 0,0 and 1,1)
 - Resistor Network Resolution
   - 7-bit: 127 Resistors (128 Taps >> 0 - 127) - MCP41HV31 series 
   - 8-bit: 255 Resistors (256 Taps >> 0 - 255) - MCP41HV51 series
@@ -32,12 +32,10 @@
 
 
 ## DEVICE SLAVE ADDRESSES
-|A1|A0|I2C Address|
-|:---:|:---:|:---:|
-|0|0|0x3c|
-|0|1|0x3d|
-|1|0|0x3e|
-|1|1|0x3f|
+```python
+spi0 = MCP41HVX1(0,0) # spi.open(0,0)
+spi1 = MCP41HVX1(1,1) # spi.open(1,1)
+```
 
 ## Wiring Diagram
 <table>
