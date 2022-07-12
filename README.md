@@ -31,12 +31,6 @@
 2. TSSOP14 to DIP14 Pinboard SMD to DIP Adapter (PCB Board)
 
 
-## DEVICE SLAVE ADDRESSES
-```python
-spi0 = MCP41HVX1(0,0) # spi.open(0,0)
-spi1 = MCP41HVX1(1,1) # spi.open(1,1)
-```
-
 ## Wiring Diagram
 <table>
 <thead>
@@ -59,46 +53,46 @@ spi1 = MCP41HVX1(1,1) # spi.open(1,1)
     <td>Power 1.8v to 5.5v<br></td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;5</td>
-    <td>SCL1 (I2C Bus 1)</td>
+    <td>&nbsp;&nbsp;23</td>
+    <td>SPI1_SCK</td>
     <td>2</td>
-    <td>SCL</td>
+    <td>SCK</td>
   </tr>
   <tr>
-    <td>GPIO</td>
-    <td>Any GPIO Pin or GND,<br>depends on what I2C address you want</td>
+    <td>&nbsp;&nbsp;24</td>
+    <td>SPI1_CS0</td>
     <td>3</td>
-    <td>A1</td>
+    <td>CS</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;3</td>
-    <td>SDA1 (I2C Bus 1)</td>
+    <td>&nbsp;&nbsp;19</td>
+    <td>SPI_MOSI</td>
     <td>4</td>
-    <td>SDA</td>
+    <td>SDI</td>
   </tr>
   <tr>
-    <td>GPIO</td>
-    <td>Any GPIO Pin or GND,<br>depends on what I2C address you want</td>
+    <td>&nbsp;&nbsp;21</td>
+    <td>SPI_MISO</td>
     <td>5</td>
-    <td>A0</td>
+    <td>SDO</td>
   </tr>
   <tr>
     <td>GND</td>
-    <td>(Not supported yet)</td>
+    <td>(GPIO feature is not yet supported)</td>
     <td>6</td>
     <td>WLAT</td>
   </tr>
   <tr>
-    <td>GND</td>
-    <td></td>
+    <td>+3.3v</td>
+    <td>(GPIO feature is not yet supported)</td>
     <td>7</td>
-    <td>NC</td>
+    <td>SHDN</td>
   </tr>
   <tr>
     <td>GND</td>
     <td>(Not supported yet,<br>Can use TCON command to shutdown)</td>
     <td>8</td>
-    <td>SHDN</td>
+    <td>NC</td>
   </tr>
   <tr>
     <td>GND</td>
@@ -140,7 +134,7 @@ spi1 = MCP41HVX1(1,1) # spi.open(1,1)
 </table>
 
 ## Wiring example
-![](reference/pic1.jpeg)
+![](reference/wiring_example.jpg)
 
 
 ## Licensing
