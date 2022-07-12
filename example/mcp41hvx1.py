@@ -3,7 +3,7 @@
 #
 #  Author: OneLife d2nnis@hotmail.com
 #
-#  Version: 1.0.0
+#  Version: v0.0.5 beta
 #  License: Apache 2.0
 # *******************************************************
 
