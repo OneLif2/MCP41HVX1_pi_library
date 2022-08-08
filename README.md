@@ -1,6 +1,5 @@
 # MCP41HVX1 Digital Potentiometer Driver for Raspberry Pi / Jetson Nano
 #MCP41HVX1 #Ditgital variable resistor #Potentiometer #Raspberry Pi #Jetson Nano
-# test PI
 
 ## Features Highlights:
 
